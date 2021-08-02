@@ -1,0 +1,23 @@
+{
+  "name": "BradeV - LinkedIn Endorsements",
+  "action": {},
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "Social collaboration tool",
+  "permissions": [
+    "scripting",
+	"tabs"
+  ],
+  "icons": {
+	"16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "host_permissions": [
+	"http://*.linkedin.com/",
+	"https://*.linkedin.com/"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
