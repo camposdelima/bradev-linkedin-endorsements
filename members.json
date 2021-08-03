@@ -1,25 +1,42 @@
-[{
-		"name": "Caio Almeida",
-		"profileURI": "http://www.linkedin.com/in/caio-almeida-gama-77025449/",
-		"skills": [
-			"C", "Scrum", "Banco de dados", "Docker", "Camunda", "Azure", "AWS", "software", "DevOps", "Kubernetes"
-		]
-	},
-	{
-		"name": "Rodrigo Braga",
-		"profileURI": "http://www.linkedin.com/in/rodrigo-luna-1459a88b/",
-		"skills": [
-			"sql",
-			"net",
-			"C"
-		]
-	},
-	{
-		"name": "Cristiano Campos",
-		"profileURI": "http://www.linkedin.com/in/cristianocamposlima/",
-		"skills": [
-			"Software", "Desenvolvimento", "Dev", "SQL", "net",
-			"C", "Java", "Gestão", "TI", "Service", "Microsoft"
-		]
-	}
+[
+    {
+        "name": "Caio Almeida",
+        "profileURI": "http://www.linkedin.com/in/caio-almeida-gama-77025449/",
+        "skills": [
+            "C", "Scrum", "Banco de dados", "Docker", "Camunda", "Azure", "AWS", "software", "DevOps", "Kubernetes"
+        ]
+    },
+    {
+        "name": "Rodrigo Braga",
+        "profileURI": "http://www.linkedin.com/in/rodrigo-luna-1459a88b/",
+        "skills": [
+            "sql",
+            "net",
+            "C"
+        ]
+    },
+    {
+        "name": "Cristiano Campos",
+        "profileURI": "http://www.linkedin.com/in/cristianocamposlima/",
+        "skills": [
+            "Software", "Desenvolvimento", "Dev", "SQL", "net",
+            "C", "Java", "Gestão", "TI", "Service", "Microsoft"
+        ]
+    },
+    {
+        "name": "Rodrigo Graf",
+        "profileURI": "http://www.linkedin.com/in/rodrigo-graf-esguedelhado-15604448/",
+        "skills": [
+            "Estimativa", "Trabalho em Equipe", "C", "java", "sql", "MongoDB",
+            "Azure DevOps", "net", "forms", "angular", "react", "team",
+            "git", "jira", "confluence", "bitbucket"
+        ]
+    },
+    {
+        "name": "Vinicius Aragao",
+        "profileURI": "https://www.linkedin.com/in/vinicius-arag%C3%A3o-32b41973/",
+        "skills": [
+            "python", "node", "sql", "react", "java", "C", "software"
+        ]
+    }
 ]
