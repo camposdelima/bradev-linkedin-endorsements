@@ -179,7 +179,9 @@
 			"net",
 			"C",
 			"Java",
-			"git"
+			"git",
+			"projetos",
+			"shell"
 		]
 	}
 ]
