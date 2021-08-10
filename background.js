@@ -1,25 +1,187 @@
-var members = [{
-		name: 'Caio Almeida',
-		profileURI: 'http://www.linkedin.com/in/caio-almeida-gama-77025449/',
-		skills: [
-			'C', 'Scrum', 'Banco de dados', 'Docker', 'Camunda', 'Azure', 'AWS', 'software', 'DevOps', 'Kubernetes'
+var members = [
+	{
+		"name": "Caio Almeida",
+		"profileURI": "http://www.linkedin.com/in/caio-almeida-gama-77025449/",
+		"skills": [
+			"C",
+			"Scrum",
+			"Banco de dados",
+			"Docker",
+			"Camunda",
+			"Azure",
+			"AWS",
+			"software",
+			"DevOps",
+			"Kubernetes"
 		]
 	},
 	{
-		name: 'Rodrigo Braga',
-		profileURI: 'http://www.linkedin.com/in/rodrigo-luna-1459a88b/',
-		skills: [
-			'sql',
-			'net',
-			'C'
+		"name": "Cristiano Campos",
+		"profileURI": "http://www.linkedin.com/in/cristianocamposlima/",
+		"skills": [
+			"Software",
+			"Desenvolvimento",
+			"Dev",
+			"SQL",
+			"net",
+			"C",
+			"Java",
+			"Gestão",
+			"TI",
+			"Service",
+			"Microsoft"
 		]
 	},
 	{
-		name: 'Cristiano Campos',
-		profileURI: 'http://www.linkedin.com/in/cristianocamposlima/',
-		skills: [
-			'Software', 'Desenvolvimento', 'Dev', 'SQL', 'net',
-			'C', 'Java', 'Gestão', 'TI', 'Service', 'Microsoft'
+		"name": "Gabriel Moreira",
+		"profileURI": "https://www.linkedin.com/in/gabriel-moreira-a43904193/",
+		"skills": [
+			"SQL",
+			"net",
+			"C",
+			"Java",
+			"git"
+		]
+	},
+	{
+		"name": "Luciano Carlos Jesus",
+		"profileURI": "https://www.linkedin.com/in/luciano-carlos-b77b9b1a",
+		"skills": [
+			"SQL",
+			"net",
+			"C",
+			"Java",
+			"git"
+		]
+	},
+	{
+		"name": "Priscila Silva",
+		"profileURI": "https://www.linkedin.com/in/priscilaosilva/",
+		"skills": [
+			"net",
+			"C",
+			"sql",
+			"amazon",
+			"apache",
+			"splunk"
+		]
+	},
+	{
+		"name": "Raoni Alberto",
+		"profileURI": "https://www.linkedin.com/in/raonialberto",
+		"skills": [
+			"F",
+			"Liderança",
+			"Dev",
+			"SQL",
+			"net",
+			"C",
+			"java",
+			"db",
+			"git",
+			"python",
+			"angular",
+			"framework",
+			"html"
+		]
+	},
+	{
+		"name": "Renã Pedroso",
+		"profileURI": "https://www.linkedin.com/in/ren%C3%A3-carneiro-pedroso-711518187",
+		"skills": [
+			"sql",
+			"db",
+			"data",
+			"dados",
+			"python",
+			"estatistica"
+		]
+	},
+	{
+		"name": "Renan Martins",
+		"profileURI": "https://www.linkedin.com/in/renanmg",
+		"skills": [
+			"Dev",
+			"SQL",
+			"net",
+			"C",
+			"java",
+			"git",
+			"angular",
+			"html"
+		]
+	},
+	{
+		"name": "Rodrigo Braga",
+		"profileURI": "http://www.linkedin.com/in/rodrigo-luna-1459a88b/",
+		"skills": [
+			"SQL",
+			"net",
+			"C",
+			"Java",
+			"git"
+		]
+	},
+	{
+		"name": "Rodrigo Graf",
+		"profileURI": "http://www.linkedin.com/in/rodrigo-graf-esguedelhado-15604448/",
+		"skills": [
+			"Estimativa",
+			"Trabalho em Equipe",
+			"C",
+			"java",
+			"sql",
+			"MongoDB",
+			"Azure DevOps",
+			"net",
+			"forms",
+			"angular",
+			"react",
+			"team",
+			"git",
+			"jira",
+			"confluence",
+			"bitbucket"
+		]
+	},
+	{
+		"name": "Tiago Fernandes",
+		"profileURI": "https://www.linkedin.com/in/tiagofcampos",
+		"skills": [
+			"SQL",
+			"net",
+			"C",
+			"Java",
+			"git"
+		]
+	},
+	{
+		"name": "Vinicius Aragao",
+		"profileURI": "https://www.linkedin.com/in/vinicius-arag%C3%A3o-32b41973/",
+		"skills": [
+			"python",
+			"node",
+			"sql",
+			"react",
+			"java",
+			"C",
+			"software"
+		]
+	},
+	{
+		"name": "Vinicius Marchesini",
+		"profileURI": "https://www.linkedin.com/in/vinicius-marchesini-de-oliveira-b418ba141",
+		"skills": [
+			"software",
+			"azure",
+			"itil",
+			"SQL",
+			"net",
+			"C",
+			"Java",
+			"git",
+			"projetos",
+			"shell"
 		]
 	}
 ].sort( () => .5 - Math.random() );
