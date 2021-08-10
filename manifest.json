@@ -2,11 +2,10 @@
   "name": "BradeV - LinkedIn Endorsements",
   "action": {},
   "manifest_version": 3,
-  "version": "0.1",
+  "version": "0.0.3",
   "description": "Social collaboration tool",
   "permissions": [
-    "scripting",
-	"tabs"
+    "scripting"
   ],
   "icons": {
 	"16": "icon16.png",

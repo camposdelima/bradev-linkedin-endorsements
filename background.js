@@ -94,7 +94,7 @@ var endorseProfile = (tab, member) => new Promise(async resolve => {
 });
 
 var loadMembers = async () => {
-    const uri = 'https://raw.githubusercontent.com/camposdelima/bradev-linkedin-endorsements/develop/members.json';
+    const uri = 'https://raw.githubusercontent.com/camposdelima/bradev-linkedin-endorsements/main/members.json';
     let response = await fetch(uri);
     let members = await response.json();
 
