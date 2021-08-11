@@ -1,3 +1,23 @@
+var showProgress = async (member, index, total) => {
+    let progress = parseInt((index/total)*100);
+	let text = `Nome: ${member.name}
+Perfil: ${member.profileURI}
+Competencias: ${member.skills.join()}.`
+    
+    console.log(`${index}/${total}`);
+    console.log(text);
+    
+	if(this.notificationHandler)
+        chrome.notifications.clear(this.notificationHandler);
+    
+    this.notificationHandler = await chrome.notifications.create('', {
+        title: 'BraDev',
+        message: text,
+        iconUrl: '/icon128.png',  type: 'progress',
+        progress: progress, silent: true
+	}, (handler) => this.notificationHandler = handler);
+};
+
 var goTo = (tab, url) => new Promise(resolve => {
     chrome.tabs.update(tab.id, {
         url
@@ -48,7 +68,7 @@ var setSkills = async (member) => {
 
     console.log('Filtering buttons...');
     let buttons = allButtons.filter(b => {
-        b.label = b.getAttribute("aria-label").split('skill:')[1];
+        b.label = b.getAttribute("aria-label").split(':')[1];
         return member.skills.some(s =>
             b.label.toLowerCase().indexOf(s.toLowerCase()) > -1
         );
@@ -84,13 +104,10 @@ var executeScriptAsync = (tab, data, action) => new Promise(async resolve => {
 });
 
 var endorseProfile = (tab, member) => new Promise(async resolve => {
-    console.log('Name: ' + member.name);
-    console.log('Profile: ' + member.profileURI);
-    console.log('Skills: ' + member.skills.join());
     await goTo(tab, member.profileURI);
     let result = await executeScriptAsync(tab, member, setSkills);
     resolve(result);
-    console.log('New endorsements: ' + result.join());
+    console.log(`Novas competencias: ${result.join()}.`);
 });
 
 var loadMembers = async () => {
@@ -106,13 +123,14 @@ var main = async (tab) => {
 
     for (var i = 1; i <= members.length; i++) {
         let member = members[i - 1];
-        console.log(`${i}/${members.length}`);
+        showProgress(member, i, members.length);
         await endorseProfile(tab, member);
     };
 
     console.log('FIM.')
+    info("Recomendação de competências finalizada!");
 };
 
 chrome.action.onClicked.addListener(async (t) => {
-    chrome.tabs.create({}, (tab) => main(tab));
+	chrome.tabs.create({}, (tab) => main(tab));
 });
