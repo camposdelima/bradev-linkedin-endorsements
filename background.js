@@ -128,7 +128,6 @@ var main = async (tab) => {
     };
 
     console.log('FIM.')
-    info("Recomendação de competências finalizada!");
 };
 
 chrome.action.onClicked.addListener(async (t) => {
